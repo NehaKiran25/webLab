@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Objects</h1>
+    <script>
+        const student=new Object();
+        student.name="Neha Kiran";
+        student.USN="RVUN24BCA055";
+        student.semester=1;
+        student.DDCA=100;
+        student.PWC=90;
+        student.WUD=99;
+        document.write(typeof(student) + "<br>");
+        for(let element in student) {
+            document.write(element + ":" + student[element] + "<br>");
+        }
+    </script>
+</body>
+</html>

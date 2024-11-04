@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Compare dates</h1>
+    <script>
+
+const d1 = new Date();
+const d2 = new Date();
+
+// comparisons
+const compare1 = d1 < d2;
+document.write(compare1,"<br>");
+
+const compare2 = d1 > d2;
+document.write(compare2 ,"<br>"  );
+
+const compare3 = d1 <= d2;
+document.write(compare3 ,"<br>"     );
+
+const compare4 = d1 >= d2;
+document.write(compare4  ,"<br>");
+
+const compare5 = d1.getTime() === d2.getTime();
+document.write(compare5,"<br>");
+
+const compare6 = d1.getTime() !== d2.getTime();
+document.write(compare6,"<br>");
+ </script>
+</body>
+</html>

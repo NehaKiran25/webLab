@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort</title>
+</head>
+<body>
+    <h1>Sorting</h1>
+    <input type="text" id="sentence" name="sentence" placeholder="enter a string">
+    <button onclick="sort()">Sort</button>
+    <p id="result"></p>
+    <p id="result"></p>
+    <script>
+        function sort() {
+            let sentence = document.getElementById('sentence').value;
+
+// converting to an array
+let words = sentence.split(' ');
+
+// sort the array elements
+words.sort();
+
+
+for (let element of words) 
+  document.write(element + "<br>");
+
+    }
+    </script>
+</body>
+</html>

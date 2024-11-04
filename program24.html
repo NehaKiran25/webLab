@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Removing an element from an array</h1>
+    <script>
+        const array=[1,2,3,4,5];
+       
+        var index=array.indexOf(2);
+        if(index > -1) {
+          array.splice(index,1);
+         
+        }
+        document.write(array);
+        
+    </script>
+</body>
+</html>

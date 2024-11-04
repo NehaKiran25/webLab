@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> removing duplicates from an array</h1>
+    <script>
+        var array=prompt("enter the array elements");
+        const newArr=[];
+        for(let i of array) {
+            if(newArr.indexOf(i)===-1){
+                newArr.push(i);
+            }
+        }
+        document.write(newArr);
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whitespace</title>
+</head>
+<body>
+    <h1>Removing white spaces</h1>
+    <input type="text" id="str" placeholder="enter a text">
+    <button onclick="remove()">Remove spaces </button>
+    <script>
+        function remove() {
+            var str=document.getElementById('str').value;
+            var result=str.split(' ').join('');
+            document.write(result);
+            
+        }
+    </script>
+</body>
+</html>

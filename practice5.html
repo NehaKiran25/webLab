@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Check</h1>
+    <script>
+        var str=prompt("enter a string");
+        var ch=prompt("enter a certain character");
+        var ch1=prompt("enter another certain character");
+        if(str.startsWith(ch) && str.endsWith(ch1)) {
+            document.write("The string starts with " + ch + " and ends with " + ch1);
+
+        }
+        else if(str.startsWith(ch)) {
+            document.write("The string starts with " + ch);
+        }
+        else if(str.endsWith(ch1)) {
+            document.write("The string ends with " + ch1);
+
+        }
+        else 
+        document.write("the string does not start with " + ch + "and ends with " + ch1);
+
+    </script>
+</body>
+</html>

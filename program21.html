@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valide email</title>
+</head>
+<body>
+    <h1>validate e-mail address</h1>
+    <input type="email" id="email" name="email" placeholder="enter RVU Domain email">
+    <button onclick="validate()"> Validate</button>
+    <script>
+        function validate() {
+        var str=document.getElementById('email').value;
+        const regex=/[a-z]bca24+@rvu+\.edu+\.in$/;
+        const result=regex.test(str);
+        if(result) {
+            document.write("The email is valid");
+        }
+        else
+        document.write("the email is invalid");
+
+        }
+    </script>
+</body>
+</html>

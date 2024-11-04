@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding keys</title>
+</head>
+<body>
+    <h1>Adding keys</h1>
+    <script>
+        const student={
+            name:'Neha',
+            age:20
+        };
+        student.gender="female";
+        const semester='semester';
+        student[semester]=1;
+        for(let element in student) {
+         document.write(element + " : " + student[element], '<br>');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student object</title>
+</head>
+<body>
+    <script>
+        function details(){
+            var student=new Object();
+            student.name="Neha Kiran";
+            student.usn="RVU24BCA055";
+            student.semester=1;
+            student.web=100;
+            student.c=9;
+            student.maths=100;
+            document.write(typeof(student) + "<br>");
+            for(let property in student) {
+              document.write(property + ":"+ student[property] ,"<br>");
+            }
+        }
+    </script>
+    <h1>Student details</h1>
+    <button onclick="details()">click here for details</button>
+    
+</body>
+</html>

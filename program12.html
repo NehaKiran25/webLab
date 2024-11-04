@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>key</title>
+</head>
+<body>
+    <h1>key</h1>
+    <script>
+        const details ={
+           name:'Neha',
+           semester:1,
+           age:20
+        };
+        for(let i in details) {
+         document.write(i + details[i] + "<br>");
+        }
+        var str=prompt("enter a key");
+        for(let element in details) {
+         if(element==str){
+            var check=element;
+            break;
+         }
+        }
+        const hasKey=check in details;
+         
+         if(hasKey) {
+            document.write("the key is present");
+
+         }
+         else
+         document.write("the key is absent");
+    </script>
+</body>
+</html>

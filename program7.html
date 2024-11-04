@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pallindrome</title>
+</head>
+<body>
+    <h1>Pallindrome</h1>
+    <button onclick="pallindrome()">Check</button>
+    <p id="result"></p>
+    <p id="result1"></p>
+    <script>
+        function pallindrome() {
+            var str=prompt("enter a string");
+            var split=str.split('');
+            var rev=split.reverse();
+            var str1=rev.join('');
+            if(str===str1) {
+                document.getElementById("result").innerHTML="The string is a pallindrome";
+
+            }
+            else 
+            document.getElementById("result1").innerHTML="the string is not a pallindrome";
+
+        }
+    </script>
+</body>
+</html>

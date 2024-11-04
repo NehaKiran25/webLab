@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ascii Values</h1>
+    <button onclick="check()">ASCII Value</button>
+    <script>
+        function check() {
+           
+            let more=true;
+            while(more) {
+                var ch=prompt("enter a character");
+                if(ch && ch.length===1) {
+                    const ascii=ch.charCodeAt(0);
+                    alert("The ascii value is " + ascii);
+                }
+                else
+                alert("please enter a single character");
+            var response=prompt("do you want to find ascii value of another character(yes/no)").toLowerCase();
+            more=response==="yes";
+            }
+        }
+    </script>
+</body>
+</html>

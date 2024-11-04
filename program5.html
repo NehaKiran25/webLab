@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Occurences in a string</title>
+</head>
+<body>
+    <h1>Occurences in a string</h1>
+    <button onclick="check()">Check Occurences</button>
+    <p id="result"></p>
+    <script>
+        function check() {
+            var word=prompt("Enter a string");
+            var letter=prompt("enter a character");           
+             var count=0;
+            for(var i=0;i < word.length;i++) {
+                if(word.charAt(i)==letter)
+                count++;
+            }
+        document.getElementById('result').innerText=count;
+        }
+    </script>
+
+</body>
+</html>

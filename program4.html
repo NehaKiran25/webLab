@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCII Value</title>
+</head>
+<body>
+    <h1>ASCII Values</h1>
+    
+    <button onclick="ascii()">ASCII Value</button>
+    
+    
+    <script>
+        function ascii() {
+            let more = true;
+
+while (more) {
+    const character = prompt("Enter a character to find its ASCII value:");
+
+    if (character && character.length === 1) {
+        const asciiValue = character.charCodeAt(0);
+        alert(`The ASCII value of '${character}' is ${asciiValue}.`);
+    } else {
+        alert("Please enter a single character.");
+    }
+
+    const response = prompt("Do you want to find ASCII values of more characters? (yes/no)").toLowerCase();
+    more = response === "yes";
+}
+}
+        
+    </script>
+</body>
+</html>
